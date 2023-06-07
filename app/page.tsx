@@ -1,4 +1,5 @@
 import { BlurImage, Image } from './BlurImage';
+import { NextImage } from './NextImage';
 import { supabase } from './utils/supabase';
 
 // export const revalidate = 1;
@@ -13,12 +14,9 @@ export default async function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 w-full">
         {images?.map((image) => (
           <BlurImage image={image} key={image.imageSrc} />
-        ))}{' '}
+        ))}
         {images?.map((image) => (
-          <BlurImage image={image} key={image.imageSrc} />
-        ))}{' '}
-        {images?.map((image) => (
-          <BlurImage image={image} key={image.imageSrc} />
+          <NextImage image={image} key={image.imageSrc} />
         ))}
       </div>
     </main>

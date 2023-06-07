@@ -25,9 +25,9 @@ export const BlurImage = ({ image }: { image: Image }) => {
           onLoadingComplete={() => setIsLoading(false)}
         />
       </div>
-      <p className="mt-4 text-lg font-medium text-gray-900">
+      {/* <p className="mt-4 text-lg font-medium text-gray-900">
         @{image.username}
-      </p>
+      </p> */}
       <p className="mt-1 text-md text-gray-700">{image.caption}</p>
     </div>
   );
