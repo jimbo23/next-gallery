@@ -1,7 +1,7 @@
 import { BlurImage, Image } from './BlurImage';
 import { supabase } from './utils/supabase';
 
-export const revalidate = 1;
+// export const revalidate = 1;
 
 export default async function Home() {
   const { data } = await supabase.from('images').select('*');
